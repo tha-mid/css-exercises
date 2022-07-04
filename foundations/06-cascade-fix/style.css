@@ -3,12 +3,22 @@
   color: hsl(0, 100%, 50%);
 }
 
+.para {
+  font-size: 22px;
+}
+
 .small-para {
   font-size: 14px;
 }
 
-.para {
-  font-size: 22px;
+/*solucao foi alterar ordem e deixar .small-para depois de .para
+outra solucao:
+especificar paragrafo ficando p.small-para */
+
+.button {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  font-size: 20px;
 }
 
 .confirm {
@@ -17,18 +27,20 @@
   font-weight: bold;
 } 
 
-.button {
-  background-color: rgb(255, 255, 255);
-  color: rgb(0, 0, 0);
-  font-size: 20px;
-}
-
-.child {
-  color: red;
-  font-size: 14px;
-}
+/* solucao usada foi alterar ordem de .button e .confirm
+outra solucao:
+colocar .button.confirm ou #confirm-button aumentando specificity*/
 
 div.text {
   color: green;
   font-size: 22px;
 }
+
+div .child {
+  color: red;
+  font-size: 14px;
+}
+
+/*solucao usada foi adicionar div antes de .child
+outra solucao:
+adicionar .text antes de .child*/
